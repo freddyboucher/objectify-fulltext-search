@@ -17,6 +17,8 @@
 <input type="submit" value="Search" /></form>
 
 <%
+	// BE CAREFUL with this line! This a example, but in a real world project, you should look a better
+	// place for register an entity, at the very begining of your application is recommended.
 	ObjectifyService.register(GuestBookEntry.class);
 
 	Objectify ofy = ObjectifyService.begin();
